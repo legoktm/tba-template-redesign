@@ -11,3 +11,4 @@ The Blue Alliance Redesign
 + converted awards over to a table, and if no awards, say "None"
 + add formal name in team info
 + robot picture added
++ added in mock team match results table
