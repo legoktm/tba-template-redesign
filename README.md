@@ -6,3 +6,4 @@ The Blue Alliance Redesign
 + Menubar looks weird when the browser window is narrow
 + Robot picture should have simpleviewer enabled
 + Tables should use a tablesorter
++ Add red/blue colors for red/blue alliance teams
