@@ -11,6 +11,9 @@
 td {
 	text-align:center;
 }
+th {
+	text-align:center;
+}
 
 td.redcell{
 	border: 1px solid #ff4444;
