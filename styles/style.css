@@ -18,6 +18,16 @@ td.redcell{
 	color: #000;
 }
 
+tr.win{
+	background-color: #90ee90;
+}
+tr.lose{
+	background-color: #f08080;
+}
+tr.tie{
+	background-color: #d3d3d3;
+}
+
 td.bluecell {
 	border: 1px solid #4444ff;
 	padding: 2px;
