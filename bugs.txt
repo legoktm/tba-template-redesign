@@ -1,0 +1,2 @@
+-top menubar becomes weird if you make the browser window narrow
+-robot picture should have simpleviewer enabled (too lazy)

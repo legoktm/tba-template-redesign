@@ -1,0 +1,8 @@
+﻿.table-center td,
+.table-center th, text-center {
+  text-align:center;
+}
+
+.clear-both {
+	clear: both;
+}
