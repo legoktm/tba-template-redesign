@@ -46,3 +46,12 @@ tr td.bluescorecell {
 	color: #fff;
 	background: #2222cc;
 }
+
+#boxscroll {
+	padding: 0px;
+	height: 160px;
+	width: 800px;
+	border: 0px;
+	overflow: auto;
+  margin-bottom:0px;
+}
