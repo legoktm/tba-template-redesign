@@ -8,12 +8,27 @@
 	<link type="text/css" href="styles/jquery-ui-1.8.13.custom.css" rel="stylesheet" />	
 	<link type="text/css" href="bootstrap/css/bootstrap.css" rel="stylesheet" />	
 	<link type="text/css" href="styles/style.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
+
 	
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 	<script type="text/javascript" src="js/jquery-latest.js"></script> 
 	<script type="text/javascript" src="js/jquery.tablesorter.js"></script> 
-	
+	<script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("a#teampic").fancybox({
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'elastic'
+				'opacity'		: true,
+			});
+		});
+	</script>	
 </head>
 <body>
 
@@ -38,7 +53,7 @@
 		<table class="table table-striped table-condensed">
 	  		<tbody>
 	  			<tr><th>Nickname</th><td>Team Name</td></tr>
-	  			<tr><th>Formal Name</th><td>Sponsor/Sponsor/Sponsor/Sponsor/Sponsor/Sponsor/Sponsor & High School</td></tr>
+	  			<tr><th>Formal Name</th><td>Castle & Cooke, Inc. Dole Plantation / McInerny Foundation / R.M. Towill Foundation / Hawaiian Electric Company / Melvin Matsunaga / Randy Wood / Friends of Hawaii Robotics / Waialua Federal Credit Union / AFCEA Hawaii / HawaiiUSA Federal Credit Union / Waialua High School Foundation / Credit Suisse-NYC CA / Waialua Hongwanji Mission / Waialua High School Class of 1941 / Monsanto Hawaii / North Shore Hanapa'a Club / BAE Systems / Waialua Lions Club / Hawaiian Dredging / Iron Horse Development / Dole Food Company of Hawaii / Hawaii Visitors and Convention Bureau / Aloha Gourmet Products / GT Pies / Islander Group / KTM Services Inc. / Maui Divers of Hawaii / Pioneer Hi-Bred International / Gone Tropo, LLC / Kai Media & Marketing / Coca Cola Hawaii / Learning Train LLC / Oils of Aloha / The Duck Company / GAK Enterprises / H&W Foods / Sunset International / Pacific Jobbers Warehouse / Gordon Kuwada / CMKLV / Kenneth Koga / Matsuo Takabuki / Laurie Oishi & Waialua High School & HI DOE</td></tr>
 	  			<tr><th>Location</th><td>Location</td></tr>
 	  			<tr><th>Rookie Season</th><td>Year</td></tr>
 	  			<tr><th>Website</th><td>Website</td></tr>
@@ -67,7 +82,7 @@
 		</div>
 		<div class="span3">
 			<h2>Picture</h2>
-				<img width="60" src="Images/604.jpg" alt="Robot name"  /> 
+				<a id="teampic" href="Images/604.jpg"><img width="60" src="Images/604.jpg" alt="Robot name"  /></a> 
 				<p>Robot name</p>
 		</div>
 	</div>
