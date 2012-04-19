@@ -49,11 +49,11 @@ tr td.bluescorecell {
 }
 
 
-/* FROM TBA ORIGINAL */
+/* FROM TBA ORIGINAL with edits*/
 table.matchTable, table.oprTable {
     border-bottom: 1px solid #cccccc;
     padding: 3px 0;
-    margin: 1em auto 1em auto;
+    margin: 1em 0 1em 0;
     width: 600px;
 	margin-left:auto;
 }
@@ -105,4 +105,9 @@ table.matchTable td.lose{
 }
 table.matchTable td.tie{
 	background-color: #d3d3d3;
+}
+
+table.matchTable.center{
+	margin-left: auto;
+	margin-right: auto;
 }
