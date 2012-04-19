@@ -10,3 +10,5 @@ The Blue Alliance Redesign
 + Tables should use a tablesorter
 + Add red/blue colors for red/blue alliance teams
 + Photos should use fancybox - code implemented, just needs to be tweaked
++ Buttons need to be fixed, something is most likely blocking bootstrap
+
