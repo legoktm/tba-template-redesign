@@ -16,7 +16,7 @@
 <script>
 $(document).ready(
   function() {  
-    $("html").niceScroll();
+    //$("html").niceScroll();
   }
 );
 </script>
@@ -42,7 +42,7 @@ $(document).ready(
 	<p><a href="events.html"><i class="icon-chevron-left"></i> Event List</a></p>
 
 	<div class="row-fluid">
-		<div class="span4">
+		<div class="span6">
 			<table class="table table-striped table-condensed">
 				<tbody>
 					<tr><th>Dates</th><td>Mar 29, 2012 to Mar 31, 2012</td></tr>
@@ -54,26 +54,15 @@ $(document).ready(
 				</tbody>
 			</table>
 		</div>
-		<div class="span8">
-		<div id="boxscroll">
-			<table class="table table-striped table-condensed table-center">
-		  		<tbody>
-		  			<tr><th>Team Number</th><th>Team Name</th><th>Location</th></tr>
-		  			<tr><td><a href="team.html">XXX</a></td><td>Name</td><td>City, XX</td></tr>
-		  			<tr><td>XXX</td><td>Name</td><td>City, XX</td></tr>
-		  			<tr><td>XXX</td><td>Name</td><td>City, XX</td></tr>
-		  			<tr><td>XXX</td><td>Name</td><td>City, XX</td></tr>
-		  			<tr><td>XXX</td><td>Name</td><td>City, XX</td></tr>
-		  			<tr><td>XXX</td><td>Name</td><td>City, XX</td></tr>
-		  			<tr><td>XXX</td><td>Name</td><td>City, XX</td></tr>
-		  			<tr><td>XXX</td><td>Name</td><td>City, XX</td></tr>
-		  			<tr><td>XXX</td><td>Name</td><td>City, XX</td></tr>
-		  			<tr><td>XXX</td><td>Name</td><td>City, XX</td></tr>
-		  			<tr><td>XXX</td><td>Name</td><td>City, XX</td></tr>
-		  			<tr><td>XXX</td><td>Name</td><td>City, XX</td></tr>
-		  		</tbody>
-		  	</table>
+		<div class="span3">
+			<h2>Last Match:</h2>
+			<p>XXX, XXX, XXX - XX</p>
+			<p>XXX, XXX, XXX - XX</p>
 		</div>
+		<div class="span3">
+			<h2>Next Match:</h2>
+			<p>XXX, XXX, XXX vs. XXX, XXX, XXX</p>
+			<p>5 minutes 30 seconds until next match</p>
 		</div>
 	</div>
 	
@@ -82,6 +71,8 @@ $(document).ready(
 	  <li class="active"><a href="#matches" data-toggle="tab">Matches</a></li>
 	  <li><a href="#rankings" data-toggle="tab">Rankings</a></li>
 	  <li><a href="#bracket" data-toggle="tab">Elim. Bracket</a></li>
+	  <li><a href="#teams" data-toggle="tab">Teams</a></li>
+	  <li><a href="#awards" data-toggle="tab">Awards</a></li>
 	</ul>
 	
 	<div class="tab-content">
@@ -91,17 +82,17 @@ $(document).ready(
 	  
 		  	<table class="table table-striped table-condensed">
 		  		<tbody>
-		  			<tr><th>Rank</th><th>Team</th><th>QS</th><th>HP</th><th>BP</th><th>TP</th><th>CP</th><th>Record (W-L-T)</th><th>DQ</th><th>Played</th></tr>
-		  			<tr><td>1.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>2.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>3.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>4.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>5.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>6.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>7.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>8.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>9.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>10.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td></tr>
+		  			<tr><th>Rank</th><th>Team</th><th>QS</th><th>HP</th><th>BP</th><th>TP</th><th>CP</th><th>Record (W-L-T)</th><th>DQ</th><th>Played</th><th>OPR</th></tr>
+		  			<tr><td>1.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
+		  			<tr><td>2.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
+		  			<tr><td>3.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
+		  			<tr><td>4.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
+		  			<tr><td>5.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
+		  			<tr><td>6.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
+		  			<tr><td>7.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
+		  			<tr><td>8.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
+		  			<tr><td>9.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
+		  			<tr><td>10.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
 		  		</tbody>
 		  	</table>
 	  </div>
@@ -133,23 +124,28 @@ $(document).ready(
 		  	</table>
 		</div>
 	  </div>
-	  <div class="tab-pane" id="opr"><h2>OPR</h2>
-	  	<table class="table table-striped table-condensed">
+	  <div class="tab-pane" id="teams"><h2>Teams</h2>
+			<table class="table table-striped table-condensed table-center">
 		  		<tbody>
-		  			<tr><th>Rank</th><th>Team</th><th>OPR</th><th>DPR</th><th>Record (W-L-T)</th><th>Ranking</th><th>Played</th></tr>
-		  			<tr><td>1</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>2</td><td>XXX</td><td>XXX</td><td>XXX</td>><td>X-X-X</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>3</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>4</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>5</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>6</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>7</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>8</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>9</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>10</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td></tr>
+		  			<tr><th>Team Number</th><th>Team Name</th><th>Location</th></tr>
+		  			<tr><td><a href="team.html">XXX</a></td><td>Name</td><td>City, XX</td></tr>
+		  			<tr><td>XXX</td><td>Name</td><td>City, XX</td></tr>
+		  			<tr><td>XXX</td><td>Name</td><td>City, XX</td></tr>
+		  			<tr><td>XXX</td><td>Name</td><td>City, XX</td></tr>
+		  			<tr><td>XXX</td><td>Name</td><td>City, XX</td></tr>
+		  			<tr><td>XXX</td><td>Name</td><td>City, XX</td></tr>
+		  			<tr><td>XXX</td><td>Name</td><td>City, XX</td></tr>
+		  			<tr><td>XXX</td><td>Name</td><td>City, XX</td></tr>
+		  			<tr><td>XXX</td><td>Name</td><td>City, XX</td></tr>
+		  			<tr><td>XXX</td><td>Name</td><td>City, XX</td></tr>
+		  			<tr><td>XXX</td><td>Name</td><td>City, XX</td></tr>
+		  			<tr><td>XXX</td><td>Name</td><td>City, XX</td></tr>
 		  		</tbody>
-		</table>
+		  	</table>
 	  </div>
+		<div class="tab-pane" id="awards"><h2>Awards</h2>
+			
+		</div>
 	</div>
 </div>
 
