@@ -5,7 +5,7 @@ The Blue Alliance Frontend Redesign
 + We are currently working on creating an intuitive and friendly user-interface.
 
 ### Known Issues/TODO
-+ Menubar looks weird when the browser window is narrow (changes styles based for mobile or something)
++ Menubar looks weird when the browser window is narrow (changes styles for mobile or something)
 + Robot picture should have simpleviewer enabled
 + Tables should use a tablesorter
 + Photos should use fancybox - code implemented, just needs to be tweaked
