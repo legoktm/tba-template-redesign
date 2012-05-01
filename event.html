@@ -69,19 +69,18 @@ $(document).ready(
 	
 	
 	<ul class="nav nav-tabs">
-	  <li class="active"><a href="#matches" data-toggle="tab">Matches</a></li>
-	  <li><a href="#rankings" data-toggle="tab">Rankings</a></li>
-	  <li><a href="#bracket" data-toggle="tab">Elim. Bracket</a></li>
+	  <li class="active"><a href="#results" data-toggle="tab">Results</a></li>
 	  <li><a href="#teams" data-toggle="tab">Teams</a></li>
 	  <li><a href="#awards" data-toggle="tab">Awards</a></li>
 	</ul>
 	
 	<div class="tab-content">
 
-	  <div class="tab-pane active" id="matches">
+	  <div class="tab-pane active" id="results">
 			
 			<div class="row">
-			<div class="span6 offset3">
+			<div class="span6">
+			<h3>Match Results</h3>
 			<table class="table table-condensed matchTable">
   
             <tr class="key">
@@ -1695,53 +1694,57 @@ $(document).ready(
 </tr>
 		  	</table>
 			</div>
-			</div>
-	  </div>
-	  <div class="tab-pane" id="rankings">
-	  
-		  	<table class="table table-striped table-condensed">
+	<div class="span6">
+	
+				<h3>Elimination Alliances</h3>
+
+			<table class="table table-condensed matchTable">
 		  		<tbody>
-		  			<tr><th>Rank</th><th>Team</th><th>QS</th><th>HP</th><th>BP</th><th>TP</th><th>CP</th><th>Record (W-L-T)</th><th>DQ</th><th>Played</th><th>OPR</th></tr>
-		  			<tr><td>1.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>2.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>3.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>4.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>5.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>6.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>7.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>8.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>9.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
-		  			<tr><td>10.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
+					<tr class="key"><th>Seed</th><th>Team 1</th><th>Team 2</th><th>Team 3</th><th>Backup</th></tr>
+		  			<tr><td>1</td><td>XXX</td><td>XXX</td><td>XXX</td><td>---</td></tr>
+		  			<tr><td>2</td><td>XXX</td><td>XXX</td><td>XXX</td><td>---</td></tr>
+		  			<tr><td>3</td><td>XXX</td><td>XXX</td><td>XXX</td><td>---</td></tr>
+		  			<tr><td>4</td><td>XXX</td><td>XXX</td><td>XXX</td><td>---</td></tr>
+		  			<tr><td>5</td><td>XXX</td><td>XXX</td><td>XXX</td><td>---</td></tr>
+		  			<tr><td>6</td><td>XXX</td><td>XXX</td><td>XXX</td><td>---</td></tr>
+		  			<tr><td>7</td><td>XXX</td><td>XXX</td><td>XXX</td><td>---</td></tr>
+		  			<tr><td>8</td><td>XXX</td><td>XXX</td><td>XXX</td><td>---</td></tr>
 		  		</tbody>
 		  	</table>
-	  </div>
-	  <div class="tab-pane" id="bracket">
-	  	<h2>Elimination Alliances</h2>
-	  	<div class="span10 offset1">
-			<table class="table table-striped table-condensed">
-		  		<tbody>
-		  			<tr><td>1.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>---</td></tr>
-		  			<tr><td>2.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>---</td></tr>
-		  			<tr><td>3.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>---</td></tr>
-		  			<tr><td>4.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>---</td></tr>
-		  			<tr><td>5.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>---</td></tr>
-		  			<tr><td>6.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>---</td></tr>
-		  			<tr><td>7.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>---</td></tr>
-		  			<tr><td>8.</td><td>XXX</td><td>XXX</td><td>XXX</td><td>---</td></tr>
-		  		</tbody>
-		  	</table>
-		</div>
-		<h2>Elimination Bracket</h2>
-		<div class="span6 offset3">
-			<table class="table table-striped table-condensed">
+			
+					<h3>Elimination Bracket</h3>
+				(this is super ugly)
+				<table class="table table-condensed">
 		  		<tbody>
 					<tr><td>1.</td><td rowspan="2">1.</td><td rowspan="4">1.</td><td rowspan="4">2.</td><td rowspan="2">3.</td><td>3.</td></tr>
 					<tr><td>8.</td><td>6.</td></tr>
 					<tr><td>5.</td><td rowspan="2">4.</td><td rowspan="2">2.</td><td>7.</td></tr>
 					<tr><td>4.</td><td>2.</td></tr>
 		  		</tbody>
+		  	</table>		
+
+				<h3>Rankings</h3>
+
+		  	<table class="table table-condensed matchTable">
+		  		<tbody>
+		  			<tr class="key"><th>Rank</th><th>Team</th><th>QS</th><th>HP</th><th>BP</th><th>TP</th><th>CP</th><th>Record (W-L-T)</th><th>DQ</th><th>Played</th><th>OPR</th></tr>
+		  			<tr><td>1</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
+		  			<tr><td>2</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
+		  			<tr><td>3</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
+		  			<tr><td>4</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
+		  			<tr><td>5</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
+		  			<tr><td>6</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
+		  			<tr><td>7</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
+		  			<tr><td>8</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
+		  			<tr><td>9</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
+		  			<tr><td>10</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>XXX</td><td>X-X-X</td><td>XXX</td><td>XXX</td><td>XXX</td></tr>
+		  		</tbody>
 		  	</table>
-		</div>
+
+			</div>
+					</div>
+			
+					
 	  </div>
 	  <div class="tab-pane" id="teams">
 			<table class="table table-striped table-condensed table-center">
