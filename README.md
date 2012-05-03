@@ -8,4 +8,4 @@ The Blue Alliance Frontend Redesign
 + Menubar looks weird when the browser window is narrow (changes styles for mobile or something)
 + Tables should use a tablesorter
 + Photos should use fancybox - code implemented, just needs to be tweaked
-
++ Currently the pages are made to "look good." Will clean up HTML/CSS as we become more satisfied with the design.
